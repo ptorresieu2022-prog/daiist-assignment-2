@@ -1,13 +1,20 @@
 {
   "positive_class": "head",
   "costs": {
-    "_note": "PROVISIONAL placeholders, to be justified in REPORT.md",
+    "_note": "Assumptions to justify in REPORT.md. One case = one frame sampled every 5 min per camera.",
     "positive_class": "head",
     "c_fp": 2.5,
-    "c_fn": 250,
+    "c_fn": 50,
     "c_tp": 2.5,
     "c_tn": 0,
-    "base_rate": 0.02
+    "base_rate": 0.02,
+    "c_review": 0.08,
+    "cameras": 20,
+    "hours_per_day": 10,
+    "frames_per_hour": 12,
+    "review_seconds": 15,
+    "human_miss_rate": 0.05,
+    "productive_hours_per_person": 6
   },
   "detection_test": {
     "map50": 0.6610066373133878,
@@ -74,13 +81,13 @@
     "assumed_production": 0.02
   },
   "operating_point": {
-    "threshold": 0.19,
+    "threshold": 0.42,
     "selected_on": "valid",
-    "cost_per_1000_valid": 338.64891691875545,
-    "cost_per_1000_test": 441.80085815244826,
-    "tpr_test": 0.9357142857142857,
-    "fpr_test": 0.030035335689045935,
-    "cost_per_1000_never_alert": 5000.0,
+    "cost_per_1000_valid": 175.01890665514262,
+    "cost_per_1000_test": 174.71479050984354,
+    "tpr_test": 0.9142857142857143,
+    "fpr_test": 0.0176678445229682,
+    "cost_per_1000_never_alert": 1000.0,
     "cost_per_1000_always_alert": 2500.0
   },
   "baselines_test": {
@@ -102,6 +109,6 @@
       "helmet": 0.9008498583569405,
       "person": 0.032577903682719546
     },
-    "coco_zero_shot_cost_per_1000": 5000.0
+    "coco_zero_shot_cost_per_1000": 1000.0
   }
 }
