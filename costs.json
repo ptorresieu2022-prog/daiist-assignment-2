@@ -1,0 +1,9 @@
+{
+  "_note": "PROVISIONAL placeholders, to be justified in REPORT.md",
+  "positive_class": "head",
+  "c_fp": 2.5,
+  "c_fn": 250,
+  "c_tp": 2.5,
+  "c_tn": 0,
+  "base_rate": 0.02
+}
